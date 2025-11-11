@@ -1,0 +1,23 @@
+/* ====== Estilos Gerais ====== */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fefefe;
+    color: #333;
+    margin: 0;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+body.fade-in { opacity: 1; }
+/* ====== Navbar ====== */
+.navbar { backdrop-filter: blur(10px); transition: background-color 0.3s ease; }
+.navbar a.nav-link { font-weight: 500; color: #333 !important; transition: color 0.3s ease; }
+.navbar a.nav-link:hover { color: #007B5E !important; }
+/* ====== Conteúdo principal ====== */
+main h1 { color: #007B5E; }
+main p { color: #555; }
+/* ====== Footer ====== */
+footer { background-color: #f8f9fa; color: #555; transition: all 0.3s ease; }
+footer a:hover { color: #007B5E; }
+/* ====== Animação de Scroll ====== */
+.reveal { opacity: 0; transform: translateY(40px); transition: all 0.8s ease; }
+.reveal.active { opacity: 1; transform: translateY(0); }
