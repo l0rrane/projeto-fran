@@ -1,7 +1,7 @@
 body {
     font-family: "Poppins", Arial, sans-serif;
     color: #333;
-    background-color: #f9f9f9;
+    background-color: #d1d1d1;
     opacity: 0;
     animation: fadeIn 1s ease-in forwards;
   }
