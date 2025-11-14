@@ -71,13 +71,25 @@ a {
   font-size: 1rem;
 }
 
+/* 🎯 Novo estilo chamativo para o título principal */
 .titulo-principal {
-  font-weight: 700;
-  color: #198754;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  font-family: "Bungee", sans-serif;
+  font-weight: 900; /* BEM forte */
+  font-size: 3rem; /* Grande e marcante */
+  color: #1b422d; /* Melhor contraste para destaque */
+  text-transform: uppercase; /* Sem caps lock obrigatório */
+  letter-spacing: 0.5px;
+  line-height: 1.2;
   margin-top: 2rem;
 }
+
+/* Ajustar em telas menores */
+@media (max-width: 768px) {
+  .titulo-principal {
+    font-size: 2.2rem;
+  }
+}
+
 
 h2 {
   color: #157347;
@@ -113,8 +125,27 @@ ul li::before {
   content: "";
 }
 
+/* topico 1 */
+
+.icon-box {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e7f5eb;
+  border-radius: 10px;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.icon-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+
 .footer-container {
-  background-color: #0c3a24;
+  background-color: #1b422d;
   color: #fff;
   font-family: "Poppins", Arial, sans-serif;
 }
