@@ -1,9 +1,11 @@
+/* estilos básicos */
 body {
   font-family: "Poppins", Arial, sans-serif;
   color: #333;
   background-color: #d1d1d1;
   opacity: 0;
   animation: fadeIn 1s ease-in forwards;
+  padding-top: 76px; /* desloca o conteúdo para abaixo do header fixo */
 }
 
 @keyframes fadeIn {
@@ -43,11 +45,6 @@ a {
   transform: translateY(-2px);
 }
 
-.navbar-nav .nav-link.active {
-  color: #000201 !important;
-  border-bottom: 2px solid #198754;
-}
-
 .carousel-item img {
   height: 500px;
   object-fit: cover;
@@ -74,10 +71,10 @@ a {
 /* 🎯 Novo estilo chamativo para o título principal */
 .titulo-principal {
   font-family: "Bungee", sans-serif;
-  font-weight: 900; /* BEM forte */
-  font-size: 3rem; /* Grande e marcante */
-  color: #1b422d; /* Melhor contraste para destaque */
-  text-transform: uppercase; /* Sem caps lock obrigatório */
+  font-weight: 900;
+  font-size: 3rem;
+  color: #1b422d;
+  text-transform: uppercase;
   letter-spacing: 0.5px;
   line-height: 1.2;
   margin-top: 2rem;
@@ -89,7 +86,6 @@ a {
     font-size: 2.2rem;
   }
 }
-
 
 h2 {
   color: #157347;
@@ -120,13 +116,12 @@ ul {
   padding-left: 0;
 }
 
-/* 🚫 Removido o conteúdo emoji */
+/* Remover bullets */
 ul li::before {
   content: "";
 }
 
-/* topico 1 */
-
+/* ícones de seção */
 .icon-box {
   width: 45px;
   height: 45px;
@@ -137,11 +132,11 @@ ul li::before {
   border-radius: 10px;
   transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
-
 .icon-box:hover {
   transform: translateY(-3px);
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
+
 
 
 .footer-container {
